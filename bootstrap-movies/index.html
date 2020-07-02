@@ -1,0 +1,122 @@
+<!---Rakesh Neginhal 10506981 Msc information-->
+
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>User Deatils</title>
+</head>
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"
+    integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS"
+    crossorigin="anonymous"></script>
+<script src="js/moviedetails.js"></script>
+<style>
+    a:hover,
+    a:focus {
+        text-decoration: none;
+        outline: none;
+    }
+
+    .nav-tabs {
+        position: relative;
+    }
+
+    .nav-tabs>li>a {
+        border-radius: 10px;
+        background: #272d33;
+        padding: 15px 30px;
+        color: #fff;
+    }
+
+    .nav-tabs>li>a:hover {
+        border-color: transparent;
+        background: #cddc00;
+        transition: 0.3s ease;
+    }
+
+    .nav-tabs>li.active>a,
+    .nav-tabs>li.active>a:focus,
+    .nav-tabs>li.active>a:hover {
+        background: #cddc00;
+        color: #fff;
+    }
+
+    .tab-content>.tab-pane {
+        border: 10px solid #c4c4c4;
+        border-top: 0px none;
+        padding: 20px;
+        line-height: 90px;
+    }
+    
+    @media only screen and (max-width: 800px) {
+        .nav-tabs>li>a {
+            padding: 10px;
+        }
+    }
+
+    tr:hover {
+        background-color: #f5f5f5;
+    }
+</style>
+
+<body style="background-color:#fff3ef">
+
+    <header
+        style="text-align: center; border-bottom: 4px #000 solid; margin-bottom: 10px;padding: 20px;color: #cddc00;background-color: #333">
+        <h2>Welcome To Omniplex Cinemas Rathmines</h2>
+    </header>
+
+    <div style="height: 30px"></div>
+
+    <div class="container text-center">
+        <div class="row text-center">
+            <div class="col-md-8 text-center">
+                <div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#section1" onclick="showMovieTiming('mon')"
+                                aria-controls="home" role="tab" id="tabmonday" data-toggle="tab">Monday</a></li>
+                        <li role="presentation"><a href="#section2" onclick="showMovieTiming('tue')"
+                                aria-controls="profile" role="tab" data-toggle="tab">Tuesday</a></li>
+                        <li role="presentation"><a href="#section3" onclick="showMovieTiming('wed')"
+                                aria-controls="messages" role="tab" data-toggle="tab">Wednesday</a></li>
+                        <li role="presentation"><a href="#section4" onclick="showMovieTiming('thu')"
+                                aria-controls="messages" role="tab" data-toggle="tab">Thursday</a></li>
+                        <li role="presentation"><a href="#section5" onclick="showMovieTiming('fri')"
+                                aria-controls="messages" role="tab" data-toggle="tab">Friday</a></li>
+                        <li role="presentation"><a href="#section6" onclick="showMovieTiming('sat')"
+                                aria-controls="messages" role="tab" data-toggle="tab">Saturday</a></li>
+                    </ul>
+
+                    <div class="tab-content">
+                        <table class="table table-striped table-bordered table-hover" id="tablecinema">
+                            <thead>
+                                <tr>
+                                    <th>Movie Name</th>
+                                    <th>Movie Info</th>
+                                    <th>Timings</th>
+                                </tr>
+
+                            </thead>
+                            <tbody id="tbody">
+                            </tbody>
+                        </table>
+                    </div>
+                    <a href="bookingdetails.html">
+                       
+                        <button type="button"  class="btn btn-info" id="booknow" >Book Now</button>
+                    </form>
+                </div>
+
+
+            </div>
+        </div>
+</body>
